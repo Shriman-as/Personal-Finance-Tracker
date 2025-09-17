@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+  background-color: #02312d;
+  min-height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.App::-webkit-scrollbar {
+  display: none;
+}
+
+.App-header {
+  padding: 20px;
+  text-align: center;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 100px);
+  box-sizing: border-box;
+  overflow: auto;
+}

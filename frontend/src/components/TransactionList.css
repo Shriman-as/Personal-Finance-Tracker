@@ -1,0 +1,204 @@
+.transaction-container {
+  width: 95%;
+  margin: 20px auto;
+  background-color: #003333;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.transaction-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.transactions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  table-layout: fixed;
+  font-size: 0.85rem;
+}
+
+.transactions-table th,
+.transactions-table td {
+  text-align: center;
+  padding: 0.2rem;
+  font-size: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  word-wrap: break-word;
+}
+
+.transactions-table th {
+  background-color: #003333;
+  color: white;
+}
+
+.transactions-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.transactions-table thead th:nth-child(1),
+.transactions-table tbody td:nth-child(1) { width: 5%; }
+
+.transactions-table thead th:nth-child(2),
+.transactions-table tbody td:nth-child(2) { width: 25%; }
+
+.transactions-table thead th:nth-child(3),
+.transactions-table tbody td:nth-child(3) { width: 10%; }
+
+.transactions-table thead th:nth-child(4),
+.transactions-table tbody td:nth-child(4) { width: 10%; }
+
+.transactions-table thead th:nth-child(5),
+.transactions-table tbody td:nth-child(5) { width: 10%; }
+
+.transactions-table thead th:nth-child(6),
+.transactions-table tbody td:nth-child(6) { width: 10%; }
+
+.transactions-table thead th:nth-child(7),
+.transactions-table tbody td:nth-child(7) {
+  width: 20%;
+  min-width: 150px;
+}
+
+.no-data {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+}
+
+.transactions-table td.action-buttons-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  flex-wrap: nowrap;
+  overflow: visible;
+}
+
+.action-button {
+  border: 2px solid white;
+  border-radius: 6px;
+  min-width: 70px;
+  padding: 0.3rem 0.6rem;
+  margin: 1px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.update-button,
+.save-button { background-color: #003333; color: white; }
+.delete-button,
+.cancel-button { background-color: #003333; color: #003333; }
+
+.action-button:hover {
+  background-color: white;
+  color: #003333;
+  border-color: #003333;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.pagination-btn {
+  background-color: #003333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.2s ease;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: white;
+  color: #003333;
+  border-color: #003333;
+}
+
+.page-info {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.export-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.export-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.export-btn {
+  background-color: #003333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+}
+
+.export-btn:hover {
+  background-color: white;
+  color: #003333;
+  border-color: #003333;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.transactions-table td.category-column {
+  position: relative;
+  width: 10%;
+}
+
+.transactions-table td.category-column .input-wrapper {
+  width: 100%;
+}
+
+.transactions-table td.category-column input {
+  width: 100%;             
+  max-width: 100%;         
+  box-sizing: border-box;  
+  padding: 2px 4px;
+  font-size: 0.75rem;
+}

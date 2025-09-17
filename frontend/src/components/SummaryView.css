@@ -1,0 +1,178 @@
+.summary-container {
+  width: 95%;
+  margin: 20px auto;
+  background-color: #003333;
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.summary-title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.view-buttons {
+  display: flex;
+  justify-content: space-between; 
+  gap: 10px;
+  margin-bottom: 15px;
+  width: 100%; 
+}
+
+.view-buttons button {
+  flex: 1; 
+  padding: 12px;
+  font-size: 16px; 
+}
+
+
+.view-btn {
+  background-color: #003333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 15px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: white;
+  color: #003333;
+  border-color: #003333;
+}
+
+.view-btn.active {
+  background-color: #009999;
+  color: white;
+}
+
+.placeholder-text {
+  text-align: center;
+  font-style: italic;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.summary-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  color: black;
+}
+
+.summary-table th,
+.summary-table td {
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.summary-table th {
+  background-color: #003333;
+  color: white;
+}
+
+.summary-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.no-data {
+  text-align: center;
+  padding: 15px;
+  color: #666;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12px;
+  gap: 10px;
+}
+
+.pagination-btn {
+  background-color: #003333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.2s ease;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: white;
+  color: #003333;
+  border-color: #003333;
+}
+
+.page-info {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.forecast {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Fade-in animation */
+.fade-in {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pie-charts {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.single-pie {
+  width: 45%;
+  min-width: 300px;
+  text-align: center;
+}
+
+.summary-button {
+  background-color: #003333;
+  color: white;
+  border: 2px solid white;
+  border-radius: 6px;
+  padding: 5px 15px;
+  margin: 2px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
